@@ -9,9 +9,7 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
-	border: 0;
 	font-family: var(--main-font);
-	display: flexbox;
 	border: 1px solid red;
 }
 
@@ -51,10 +49,11 @@ figcaption {
 	color: var(--font-color);
 }
 
-img {
+.bio-pic {
 	display: inline;
 	width: 200px;
 	margin: 10px;
+  border-radius: 10%;
 }
 
 .header {
@@ -81,6 +80,7 @@ hgroup {
 	display: inline-block;
 	padding: 25px;
 	margin: 25px;
+  border-radius: 5%;
 }
 
 .title {
@@ -101,17 +101,24 @@ hgroup {
   margin: 15px 0;
 }
 
+#logo {
+  width: 50px;
+  display: inline;
+  margin: 5px auto;
+}
+
 nav {
 	width: 100%;
-	height: 50px;
-  background-color: var(--divider-color);
+	height: fit-content;
+  background: linear-gradient(to right, #b62450, #9198e5);
 }
 
 ul {
 	list-style: none;
   width: fit-content;
-  height: fit-content;
-  margin: 10px;
+  height: 60px;
+  margin: auto 10px;
+  display: inline;
 }
 
 li {
@@ -126,8 +133,26 @@ a {
   font-size: large;
 }
 
+.art {
+  width: 80%;
+  height: fit-content;
+  margin: 25px auto;
+}
+
+.artshowcase {
+  width: 500px;
+  display: inline-block;
+  margin: 30px 30px;
+}
+
+.art-text {
+  display: inline-block;
+  width: 50%;
+  margin: 20px;
+}
+
 footer {
 	width: 100%;
 	height: 50px;
-	background-color: var(--divider-color);
+	background: linear-gradient(to right, #b62450, #9198e5);
 }
