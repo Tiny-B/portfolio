@@ -1,0 +1,120 @@
+:root {
+	--main-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	--page-color: #222222;
+	--section-color: #444444;
+	--divider-color: #a51659;
+	--font-color: #dddddd;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	border: 0;
+	font-family: var(--main-font);
+	display: flexbox;
+	border: 1px solid red;
+}
+
+html {
+	background-color: var(--page-color);
+}
+
+section {
+	background-color: var(--section-color);
+	padding: 20px;
+}
+
+h2 {
+	color: var(--font-color);
+}
+
+h3 {
+	padding-bottom: 10px;
+	color: var(--font-color);
+}
+
+label {
+	color: var(--font-color);
+}
+
+p {
+	width: 90%;
+	margin: auto;
+	padding: 20px 0;
+	color: var(--font-color);
+}
+
+figcaption {
+	width: 300px;
+	margin: 0 auto;
+	font-style: italic;
+	color: var(--font-color);
+}
+
+img {
+	display: inline;
+	width: 200px;
+	margin: 10px;
+}
+
+.header {
+	width: 70%;
+	margin: 0 auto;
+	padding-bottom: 15px;
+	text-align: center;
+	color: var(--font-color);
+}
+
+.bio {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+hgroup {
+	width: fit-content;
+}
+
+.headshot {
+	width: 40%;
+	height: fit-content;
+	display: inline-block;
+	padding: 25px;
+	margin: 25px;
+}
+
+.title {
+	width: 50%;
+	display: inline-block;
+	margin: 50px;
+}
+
+.formElement {
+	padding-bottom: 15px;
+}
+
+.med-divider {
+	width: 100%;
+	height: 5px;
+	background-color: var(--divider-color);
+}
+
+nav {
+	width: 100%;
+	height: 50px;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline;
+	color: var(--font-color);
+}
+
+footer {
+	width: 100%;
+	height: 50px;
+	background-color: aqua;
+}

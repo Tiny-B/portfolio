@@ -7,33 +7,82 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
     <meta name="description" content="A page showcasing work done by Eri"/>
+    <link rel="stylesheet" href="./style.css"/>
 		<title>Portfolio for Eri</title>
 	</head>
 
 	<body>
     <header>
       <nav>
-
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>Photos</a></li>
+          <li><a>About</a></li>
+          <li><a>Contact</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
-      <section>
+      <section class="title">
         <hgroup>
-          <h1>A Collection Of Work Created By Eri.</h1>
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad inventore exercitationem quod velit maiores quo voluptates ducimus perspiciatis, excepturi ab repudiandae voluptatem odio iusto tempore voluptatum nesciunt fuga soluta.</h3>
+          <h1 class="header">A Collection Of Work Created By Eri.</h1>
+          <h3 class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad inventore exercitationem</h3>
         </hgroup>
+      </section>
 
+      <section class="headshot">
         <article>
-          <img src="./mee.png" alt="A picture os my vtuber avatar."/>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae doloribus repellat quod facilis maxime obcaecati vitae saepe, perferendis iusto tenetur quidem nisi culpa officiis ea, consequatur debitis quae commodi.</p>
+          <img src="./resources/mee.png" alt="A picture os my vtuber avatar." />
+          <img src="./resources/mee.png" alt="A picture os my vtuber avatar." />
+          <img src="./resources/mee.png" alt="A picture os my vtuber avatar." />
+          
+          <figcaption>My vtuber avatar.</figcaption>
+          <br>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae doloribus repellat quod facilis maxime obcaecati vitae saepe, perferendis iusto tenetur quidem nisi culpa officiis ea, consequatur debitis quae commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, minus cupiditate natus, nesciunt, quaerat quos</p>
         </article>
+      </section>
+      
+      <div class="med-divider"></div>
 
+      <section class="signUpForm">
+        <h2>Contact Form</h2>
+        <form method="post">
+          <p style="color: crimson;">* Required</p>
+          
+          <div class="formElement">
+            <label for="username">Username: <p style="color: crimson; display: inline;">*</p></label><br>
+            <input type="text" name="username" id="username" minlength="6" maxlength="12" placeholder="Enter a username..." required/>
+          </div>
+
+          <div class="formElement">
+            <label for="pass">Password: <p style="color: crimson; display: inline;">*</p></label><br>
+            <input type="password" name="password" id="password" placeholder="Enter a password..." required/>
+          </div>
+          
+          <div class="formElement">
+            <label for="email">Email: <p style="color: crimson; display: inline;">*</p></label><br>
+            <input type="email" name="email" id="email" placeholder="Enter an email..." required/>
+          </div>
+
+          <div class="formElement">
+            <label for="phone">Phone number: </label><br>
+            <input type="tel" name="phone" id="phone" placeholder="Enter a phone number..." pattern="/0-9/"/>
+          </div>
+
+          <div class="formElement">
+            <label for="message">Message: </label><br>
+            <textarea></textarea>
+          </div>
+
+          <br>
+          <input type="submit" value="Submit"/>
+        </form>
       </section>
     </main>
 
     <footer>
-
+      
     </footer>
   </body>
 </html>
