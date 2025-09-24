@@ -17,20 +17,20 @@
       <nav>
         <img src="./resources/icon.png" id="logo"/>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Photos</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#art">Art</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#form">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="main-container">
+      <section class="main-container" id="home">
         <div class="title container">
           <hgroup>
             <h1 class="header">A Collection Of Work Created By Eri.</h1>
-            <h3 class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad inventore exercitationem</h3>
+            <h3 class="bio">Content creator - Artist - Unity gameplay programmer - Full stack web developer - Cat parent</h3>
           </hgroup>
         </div>
 
@@ -40,7 +40,7 @@
             <img class="bio-pic" src="./resources/mee.png" alt="A picture os my vtuber avatar." />
             <img class="bio-pic" src="./resources/mee.png" alt="A picture os my vtuber avatar." />
             
-            <figcaption>My vtuber avatar.</figcaption>
+            <figcaption>My vtuber avatar, that I designed and rigged.</figcaption>
             <br>
             <p class="headshot-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae doloribus repellat quod facilis maxime obcaecati vitae saepe, perferendis iusto tenetur quidem nisi culpa officiis ea, consequatur debitis quae commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, minus cupiditate natus, nesciunt, quaerat quos</p>
           </article>
@@ -50,9 +50,10 @@
       
       <div class="med-divider"></div>
 
-      <section class="art">
+      <section class="art" id="art">
         <div class="border container">
           <article>
+            <figcaption style="text-align:left; width:fit-content; margin-left: 0;" >Hover to enlarge +</figcaption>
             <img class="artshowcase" src="./resources/emotes1.png"/>
             <p class="art-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad fugit dignissimos at magni facilis itaque corrupti? Aut accusantium minus praesentium. Voluptatem libero vel non molestiae cum asperiores saepe pariatur enim?</p>
           </article>
@@ -60,13 +61,14 @@
         <br><br>
         <div class="border container">
           <article>
+            <figcaption style="text-align:left; width:fit-content; margin-left: 0;" >Hover to enlarge +</figcaption>
             <img class="artshowcase" src="./resources/art1.png"/>
             <p class="art-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad fugit dignissimos at magni facilis itaque corrupti? Aut accusantium minus praesentium. Voluptatem libero vel non molestiae cum asperiores saepe pariatur enim?</p>
           </article>
         </div>
       </section>
 
-      <section class="signUpForm">
+      <section class="signUpForm" id="form">
         <div class="container">
           <h2 class="form-header">Contact Form</h2>
           <form method="post">
@@ -75,11 +77,6 @@
             <div class="formElement">
               <label for="username" class="user-label">Username: <p style="color: crimson; display: inline;">*</p></label><br>
               <input type="text" name="username" id="username" minlength="6" maxlength="12" placeholder="Enter a username..." required/>
-            </div>
-
-            <div class="formElement">
-              <label for="password" class="pass-label">Password: <p style="color: crimson; display: inline;">*</p></label><br>
-              <input type="password" name="password" id="password" placeholder="Enter a password..." required/>
             </div>
           
             <div class="formElement">
