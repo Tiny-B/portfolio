@@ -8,3 +8,5 @@ The idea to enlarge images upon hovering with the mouse was to let viewers see t
 a new page.
 
 For my color scheme I went for pinks and purples as they are my favorite with an easy on the eyes dark aesthetic.
+
+You can visit the site here; [text](https://tiny-b.github.io/portfolio/)
