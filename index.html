@@ -26,15 +26,15 @@
     </header>
 
     <main>
-      <div class="main-container">
-        <section class="title">
+      <section class="main-container">
+        <div class="title container">
           <hgroup>
             <h1 class="header">A Collection Of Work Created By Eri.</h1>
             <h3 class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad inventore exercitationem</h3>
           </hgroup>
-        </section>
+        </div>
 
-        <section class="headshot">
+        <div class="headshot container">
           <article>
             <img class="bio-pic" src="./resources/mee.png" alt="A picture os my vtuber avatar." />
             <img class="bio-pic" src="./resources/mee.png" alt="A picture os my vtuber avatar." />
@@ -44,52 +44,63 @@
             <br>
             <p class="headshot-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae doloribus repellat quod facilis maxime obcaecati vitae saepe, perferendis iusto tenetur quidem nisi culpa officiis ea, consequatur debitis quae commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, minus cupiditate natus, nesciunt, quaerat quos</p>
           </article>
-        </section>
-      </div>
+        </div>
+      </section>
       
       
       <div class="med-divider"></div>
 
       <section class="art">
-        <article>
-          <img class="artshowcase" src="./resources/emotes1.png"/>
-          <p class="art-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad fugit dignissimos at magni facilis itaque corrupti? Aut accusantium minus praesentium. Voluptatem libero vel non molestiae cum asperiores saepe pariatur enim?</p>
-        </article>
+        <div class="border container">
+          <article>
+            <img class="artshowcase" src="./resources/emotes1.png"/>
+            <p class="art-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad fugit dignissimos at magni facilis itaque corrupti? Aut accusantium minus praesentium. Voluptatem libero vel non molestiae cum asperiores saepe pariatur enim?</p>
+          </article>
+        </div>
+        <br><br>
+        <div class="border container">
+          <article>
+            <img class="artshowcase" src="./resources/art1.png"/>
+            <p class="art-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad fugit dignissimos at magni facilis itaque corrupti? Aut accusantium minus praesentium. Voluptatem libero vel non molestiae cum asperiores saepe pariatur enim?</p>
+          </article>
+        </div>
       </section>
 
       <section class="signUpForm">
-        <h2 class="form-header">Contact Form</h2>
-        <form method="post">
-          <p style="color: crimson;">* Required</p>
+        <div class="container">
+          <h2 class="form-header">Contact Form</h2>
+          <form method="post">
+            <p style="color: crimson;">* Required</p>
           
-          <div class="formElement">
-            <label for="username" class="user-label">Username: <p style="color: crimson; display: inline;">*</p></label><br>
-            <input type="text" name="username" id="username" minlength="6" maxlength="12" placeholder="Enter a username..." required/>
-          </div>
+            <div class="formElement">
+              <label for="username" class="user-label">Username: <p style="color: crimson; display: inline;">*</p></label><br>
+              <input type="text" name="username" id="username" minlength="6" maxlength="12" placeholder="Enter a username..." required/>
+            </div>
 
-          <div class="formElement">
-            <label for="password" class="pass-label">Password: <p style="color: crimson; display: inline;">*</p></label><br>
-            <input type="password" name="password" id="password" placeholder="Enter a password..." required/>
-          </div>
+            <div class="formElement">
+              <label for="password" class="pass-label">Password: <p style="color: crimson; display: inline;">*</p></label><br>
+              <input type="password" name="password" id="password" placeholder="Enter a password..." required/>
+            </div>
           
-          <div class="formElement">
-            <label for="email" class="email-label">Email: <p style="color: crimson; display: inline;">*</p></label><br>
-            <input type="email" name="email" id="email" placeholder="Enter an email..." required/>
-          </div>
+            <div class="formElement">
+              <label for="email" class="email-label">Email: <p style="color: crimson; display: inline;">*</p></label><br>
+              <input type="email" name="email" id="email" placeholder="Enter an email..." required/>
+            </div>
 
-          <div class="formElement">
-            <label for="phone" class="phone-label">Phone number: </label><br>
-            <input type="tel" name="phone" id="phone" placeholder="Enter a phone number..." pattern="/0-9/"/>
-          </div>
+            <div class="formElement">
+              <label for="phone" class="phone-label">Phone number: </label><br>
+              <input type="tel" name="phone" id="phone" placeholder="Enter a phone number..." pattern="/0-9/"/>
+            </div>
 
-          <div class="formElement">
-            <label for="message" class="message-label">Message: </label><br>
-            <textarea id="message"></textarea>
-          </div>
+            <div class="formElement">
+              <label for="message" class="message-label">Message: </label><br>
+              <textarea id="message"></textarea>
+            </div>
 
-          <br>
-          <input type="submit" value="Submit"/>
-        </form>
+            <br>
+            <input type="submit" value="Submit"/>
+          </form>
+        </div>
       </section>
     </main>
 
