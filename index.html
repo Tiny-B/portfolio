@@ -42,7 +42,7 @@
             
             <figcaption>My vtuber avatar.</figcaption>
             <br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae doloribus repellat quod facilis maxime obcaecati vitae saepe, perferendis iusto tenetur quidem nisi culpa officiis ea, consequatur debitis quae commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, minus cupiditate natus, nesciunt, quaerat quos</p>
+            <p class="headshot-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo beatae doloribus repellat quod facilis maxime obcaecati vitae saepe, perferendis iusto tenetur quidem nisi culpa officiis ea, consequatur debitis quae commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, minus cupiditate natus, nesciunt, quaerat quos</p>
           </article>
         </section>
       </div>
@@ -58,33 +58,33 @@
       </section>
 
       <section class="signUpForm">
-        <h2>Contact Form</h2>
+        <h2 class="form-header">Contact Form</h2>
         <form method="post">
           <p style="color: crimson;">* Required</p>
           
           <div class="formElement">
-            <label for="username">Username: <p style="color: crimson; display: inline;">*</p></label><br>
+            <label for="username" class="user-label">Username: <p style="color: crimson; display: inline;">*</p></label><br>
             <input type="text" name="username" id="username" minlength="6" maxlength="12" placeholder="Enter a username..." required/>
           </div>
 
           <div class="formElement">
-            <label for="pass">Password: <p style="color: crimson; display: inline;">*</p></label><br>
+            <label for="password" class="pass-label">Password: <p style="color: crimson; display: inline;">*</p></label><br>
             <input type="password" name="password" id="password" placeholder="Enter a password..." required/>
           </div>
           
           <div class="formElement">
-            <label for="email">Email: <p style="color: crimson; display: inline;">*</p></label><br>
+            <label for="email" class="email-label">Email: <p style="color: crimson; display: inline;">*</p></label><br>
             <input type="email" name="email" id="email" placeholder="Enter an email..." required/>
           </div>
 
           <div class="formElement">
-            <label for="phone">Phone number: </label><br>
+            <label for="phone" class="phone-label">Phone number: </label><br>
             <input type="tel" name="phone" id="phone" placeholder="Enter a phone number..." pattern="/0-9/"/>
           </div>
 
           <div class="formElement">
-            <label for="message">Message: </label><br>
-            <textarea></textarea>
+            <label for="message" class="message-label">Message: </label><br>
+            <textarea id="message"></textarea>
           </div>
 
           <br>

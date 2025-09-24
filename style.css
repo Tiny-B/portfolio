@@ -4,6 +4,7 @@
 	--section-color: #444444;
 	--divider-color: #a51659;
 	--font-color: #dddddd;
+  --gradient: linear-gradient(to right, #b62450, #9198e5);
 }
 
 * {
@@ -26,16 +27,21 @@ h2 {
 	color: var(--font-color);
 }
 
-h3 {
-	padding-bottom: 10px;
-	color: var(--font-color);
-}
-
 label {
 	color: var(--font-color);
 }
 
 p {
+  color: var(--font-color)
+}
+
+/* -----Top section----- */
+h3 {
+	padding-bottom: 10px;
+	color: var(--font-color);
+}
+
+.headshot-text {
 	width: 90%;
 	margin: auto;
 	padding: 20px 0;
@@ -90,10 +96,36 @@ hgroup {
 	margin: 50px;
 }
 
+/* -----Form----- */
 .formElement {
 	padding-bottom: 15px;
 }
 
+label, input {
+  display: inline;
+  width: 200px;
+}
+
+.form-header {
+  content: "⭐";
+}
+.user-label::before {
+  content: "👤";
+}
+.pass-label::before {
+  content: "🔒";
+}
+.email-label::before {
+  content: "📧";
+}
+.phone-label::before {
+  content: "📞";
+}
+.message-label::before {
+  content: "📝";
+}
+
+/* -----dividers----- */
 .med-divider {
 	width: 100%;
 	height: 5px;
@@ -101,7 +133,10 @@ hgroup {
   margin: 15px 0;
 }
 
+/* -----Navigation bar----- */
 #logo {
+  position: absolute;
+  left: 10px;
   width: 50px;
   display: inline;
   margin: 5px auto;
@@ -109,16 +144,15 @@ hgroup {
 
 nav {
 	width: 100%;
-	height: fit-content;
-  background: linear-gradient(to right, #b62450, #9198e5);
+	height: 60px;
+  background: var(--gradient);
 }
 
 ul {
 	list-style: none;
-  width: fit-content;
-  height: 60px;
-  margin: auto 10px;
-  display: inline;
+  position: relative;
+  top: 20px;
+  left: 50px;
 }
 
 li {
@@ -131,8 +165,10 @@ a {
   color: var(--font-color);
   margin: 10px;
   font-size: large;
+  text-decoration: none;
 }
 
+/* -----Artwork showcase----- */
 .art {
   width: 80%;
   height: fit-content;
@@ -143,6 +179,7 @@ a {
   width: 500px;
   display: inline-block;
   margin: 30px 30px;
+  box-shadow: 5px 5px 10px;
 }
 
 .art-text {
@@ -151,8 +188,9 @@ a {
   margin: 20px;
 }
 
+/* -----footer----- */
 footer {
 	width: 100%;
 	height: 50px;
-	background: linear-gradient(to right, #b62450, #9198e5);
+	background: var(--gradient);
 }
